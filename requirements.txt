@@ -1,6 +1,6 @@
 # Core dependencies
 openai
-pinecone-client
+pinecone
 rank-bm25
 langchain
 streamlit
