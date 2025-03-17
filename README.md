@@ -15,7 +15,45 @@ The system provides an interactive **Streamlit** app where users can input resea
 - Python 3.7+
 - Install dependencies via `pip install -r requirements.txt`.
 
+## Installation
+
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/AI-Powered_Personal_Research_Assistant.git
+cd AI-Powered_Personal_Research_Assistant
+```
+
 ### Install Dependencies
 To install the required dependencies, run:
 ```bash
 pip install -r requirements.txt
+```
+
+### Set Up Environment Variables
+Create a `.env` file in the root directory and add your API keys:
+```
+OPENAI_API_KEY=your_openai_api_key
+PINECONE_API_KEY=your_pinecone_api_key
+```
+
+## Usage
+To run the Streamlit app, execute:
+```bash
+streamlit run app.py
+```
+
+## Project Structure
+- `app.py`: Main application file for the Streamlit app.
+- `scraper/`: Contains web scraping spiders for different data sources.
+- `summarization/`: Contains the recursive summarization logic.
+- `retrieval/`: Contains the BM25 and vector search logic.
+- `embeddings/`: Contains scripts for generating and storing embeddings.
+- `chunking/`: Contains text chunking logic.
+- `.env`: Environment variables file (not included in the repository for security reasons).
+- `requirements.txt`: List of dependencies.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+
+## License
+This project is licensed under the MIT License.
