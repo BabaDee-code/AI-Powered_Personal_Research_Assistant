@@ -14,7 +14,7 @@ def recursive_summarization(paper_sections):
         response = openai.Completion.create(
             model="gpt-4",
             prompt=f"Summarize this section: {section}",
-            max_tokens=100
+            max_tokens=1000
         )
         summary += response['choices'][0]['text']
     return summary

@@ -12,3 +12,4 @@ class ArxivSpider(scrapy.Spider):
                 'title': title,
                 'abstract': abstract
             }
+
